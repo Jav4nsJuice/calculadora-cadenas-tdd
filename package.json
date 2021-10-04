@@ -2,7 +2,7 @@
   "name": "parcelbase",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -12,6 +12,13 @@
   "author": "Javier Ferrel",
   "license": "ISC",
   "devDependencies": {
+    "babel-jest": "^27.2.4",
+    "jest": "^27.2.4",
+    "parcel": "^2.0.0-rc.0",
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "coverage": "^0.4.1"
   }
 }

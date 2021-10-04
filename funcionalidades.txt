@@ -1,0 +1,3 @@
+Funcionalidades:
+- Devolver un numero
+- Reconocer sólo el numero en una cadena
