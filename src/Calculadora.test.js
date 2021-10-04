@@ -1,4 +1,4 @@
-// import calcularCadena from "./Calculadora"
+import calcularCadena from "./Calculadora"
 
 describe("Calculadora", () => {
     it("Deberia calcular un numero", () =>{
@@ -28,18 +28,16 @@ describe("Calculadora", () => {
     it("Deberia calcular una cadena ingresada", () =>{
         expect(calcularCadena("4,1-7,5,2-1")).toEqual(20);
     });
+    it("Deberia calcular una cadena ingresada", () =>{
+        expect(calcularCadena("//[;] 6;7;4")).toEqual(17);
+    });
+    it("Deberia calcular una cadena ingresada", () =>{
+        expect(calcularCadena("/[;] 6;7;4")).toEqual("Bad News");
+    });
+    it("Deberia calcular una cadena ingresada", () =>{
+        expect(calcularCadena("//[;]6;7;4")).toEqual("Bad News");
+    });
+    it("Deberia calcular una cadena ingresada", () =>{
+        expect(calcularCadena("//[;] 6,7;4-3")).toEqual(20);
+    });
 });
-
-function calcularCadena(cadena){
-    var i = 0;
-    var suma = 0;
-    while(i < cadena.length){
-        if(cadena[i] == "," || cadena[i] == "-"){
-            suma = suma + 0;
-        }else{
-            suma = suma + parseInt(cadena[i]);
-        }
-        i = i + 1;
-    }   
-    return suma;
-}

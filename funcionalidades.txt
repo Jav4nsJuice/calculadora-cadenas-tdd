@@ -1,3 +1,9 @@
 Funcionalidades:
-- Devolver un numero
-- Reconocer sólo el numero en una cadena
+- Devolver un numero OK
+- Reconocer sólo el numero en una cadena OK
+-Reconocer los delimitadores OK
+- Sumar los numeros evitando los delimitadores OK
+- Tomar en cuenta el formato y delimitadores nuevos ingresados por el usuario OK
+- Sumar numeros con 2 o más cifras
+- Sumar la cadena con delimitadores de longitud deseada
+- Multiples delimitadores
